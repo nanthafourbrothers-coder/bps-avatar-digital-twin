@@ -1,0 +1,20 @@
+[Slide 1]
+Hello. I'm Nanthakumar R from New Way Concepts Research. This is AVATAR-Twin, a digital twin of the astronaut bone marrow chip, our entry for the NASA BPS Digital AVATAR Challenge.
+
+[Slide 2]
+AVATAR chips are built from the cells of the crew who flew them. Bone marrow is one of the tissues most sensitive to radiation, and spaceflight already changes blood: astronauts on six-month missions destroyed 54 percent more red blood cells than normal. But one flight, a handful of donors, ten days. A single experiment cannot answer a personal question. A model has to carry what each flight teaches forward.
+
+[Slide 3]
+AVATAR-Twin has four layers. An exposure model turns dosimetry into biologically effective dose. A mechanistic marrow model describes stem cells, maturation, damage, repair and recovery for the red, myeloid, platelet and lymphoid lineages. A single-cell layer links multi-omic data to the rates in that model. And a hierarchical Bayesian layer splits every response into a crew-shared part and a donor-specific part.
+
+[Slide 4]
+That split is the heart of the idea. Each donor's response equals the shared crew effect plus a personal deviation. From it we report an individuality index for every cell type. Near zero, the crew average is a safe guide. Near one, personal monitoring matters. In a synthetic test, partial pooling reduced error when data were noisy, by pulling each estimate toward the crew average only as far as the data justify.
+
+[Slide 5]
+We also tested what four donors can tell us, and the answer is honest. With flight versus ground only, the individual spread is almost impossible to estimate. Adding a ground dose ladder, the same donors' chips exposed to several radiation levels, narrows it sharply. So the twin tells NASA which experiments to run next.
+
+[Slide 6]
+The twin keeps improving through sequential Bayesian updating. Each new mission is first predicted, then used to update. Candidate models pass a validation gate: held-out donors, interval coverage, and a comparison against simple linear baselines. Chip results are then checked against the astronauts' own blood, using Inspiration4, the Twins Study and ISS hemolysis data from around the world.
+
+[Slide 7]
+The outputs, predicted lineage recovery, stem reserve and the individuality index, with uncertainty, help plan monitoring and medical kits for each crew member. Code, slides and the white paper are on GitHub. Thank you.
